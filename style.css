@@ -1,0 +1,115 @@
+:root {
+    --navy: #000080;
+    --white: #ffffff;
+    --light-gray: #f4f7f6;
+    --dark-text: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.promo-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container, .kad-pengesahan {
+    max-width: 800px;
+    margin: 30px auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 6px solid var(--navy);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--navy);
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select, 
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0000cd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.yuran-box {
+    background: #eef2ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.3em;
+    border: 2px dashed var(--navy);
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e63946;
+}
+
+@media (max-width: 600px) {
+    .promo-section, .form-container, .kad-pengesahan {
+        margin: 15px;
+        padding: 20px;
+    }
+    header {
+        padding: 30px 10px;
+    }
+}
