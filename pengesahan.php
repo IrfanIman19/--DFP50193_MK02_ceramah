@@ -9,11 +9,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $harga_unit = 20;
     $jumlah_yuran = $harga_unit * $slot;
 
-    // Logik untuk paparan gambar sementara
     $nama_fail = $_FILES['bukti']['name'];
     $lokasi_sementara = $_FILES['bukti']['tmp_name'];
     
-    // Menukar fail kepada format Base64 supaya boleh terus dipaparkan tanpa simpan di folder
     $data_imej = base64_encode(file_get_contents($lokasi_sementara));
     $sumber_imej = 'data:' . $_FILES['bukti']['type'] . ';base64,' . $data_imej;
 } else {
